@@ -19,7 +19,7 @@ int main()
 	std::cout << "Minimum and Maximum value of Unsigned Long : 0 4294967295" << std::endl;
 
 	std::cout << "Size of Float : " << sizeof(float) << " bytes " << 8 * sizeof(float) << " bits" << std::endl;
-	std::cout << "Minimum and Maximum value of Float : 3.4*10^4932 1.1*10^4932" << std::endl;
+	std::cout << "Minimum and Maximum value of Float : 3.4*10^-38 3.4*10^38" << std::endl;
 
 	std::cout << "Size of Bool : " << sizeof(bool) << " bytes " << 8 * sizeof(bool) << " bits" << std::endl;
 	std::cout << "Minimum and Maximum value of Bool : true/false" << std::endl;
