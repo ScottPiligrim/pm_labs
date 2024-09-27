@@ -1,0 +1,10 @@
+^C:\GIT\PM_LABS\L2\BUILD\CMAKEFILES\B557E206D949DC2A7706452852CC371B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Git/pm_labs/l2 -BC:/Git/pm_labs/l2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Git/pm_labs/l2/build/example.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
