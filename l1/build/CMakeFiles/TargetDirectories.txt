@@ -1,0 +1,3 @@
+C:/Git/l1/build/CMakeFiles/example.dir
+C:/Git/l1/build/CMakeFiles/ALL_BUILD.dir
+C:/Git/l1/build/CMakeFiles/ZERO_CHECK.dir
