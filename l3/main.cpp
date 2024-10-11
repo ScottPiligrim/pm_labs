@@ -1,3 +1,6 @@
+// Вариант 3
+// Вывести значение i-го бита числа x (0<x<10^9).
+
 #include <iostream>
 using namespace std;
 
