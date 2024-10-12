@@ -44,7 +44,7 @@ int main()
 
 
     int x;
-    cout << "Input x = 1, -1: ";
+    cout << "Enter x = 1, -1: ";
     cin >> x;
     switch (x) {
     case 1: cout << "Positive number" << endl; break;
