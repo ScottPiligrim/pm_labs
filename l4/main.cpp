@@ -17,11 +17,16 @@ int main()
     int a, b, c;
     cout << "Enter natural numbers A, B and C: ";
     cin >> a >> b >> c;
-    if (a>b & b>c) {
-        cout << (b/c+b-a) << endl;
-    }
-    else {
-        cout << (a+b+c) << endl;
+    if (a>0 & b>0 & c>0) {
+        if (a>b & b>c) {
+            cout << (a-b-c) << endl;
+        }
+        else if (b>a & b%c==0) {
+            cout << (b/c+b-a) << endl;
+        }
+        else {
+            cout << (a+b+c) << endl;
+        }
     }
 
 
