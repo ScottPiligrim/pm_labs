@@ -31,10 +31,13 @@ int main()
 
    for (int i=0; i<n; i++)
    {
-      prod*= mas[-2];prod*=mas[-1];prod*=mas[0];prod*=mas[1];prod*=mas[2];prod*=mas[3];prod*=mas[4];prod*=mas[5];prod*=mas[6];prod*=mas[7];prod*=mas[8];prod*=mas[9];prod*=mas[10];prod*=mas[11];prod*=mas[12];prod*=mas[13];prod*=mas[14];prod*=mas[15];prod*=mas[16];prod*=mas[17];prod*=mas[18];prod*=mas[19];prod*=mas[20];
-      if (mas[i]<min && min==0)
+      for (int j=-2; j<20; j++)
       {
-         min = mas[i];
+         prod*= mas[j];
+         if (mas[i]<min && min==0)
+         {
+            min = mas[i];
+         }
       }
       cout << i+1 << ". " << mas[i] << endl;
    }
