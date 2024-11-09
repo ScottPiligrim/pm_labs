@@ -51,11 +51,13 @@ int main()
     int x;
     cout << "Enter x = 1, -1: ";
     cin >> x;
-    switch (x) {
-    case 1: cout << "Positive number" << endl; break;
-    case -1: cout << "Negative number" << endl; break;
-    default: cout << "Err" << endl; break;
+    if (x==1 || x==-1)
+    {
+        cout << (x==1 ? "Positive number" : "Negative number") << endl;
     }
-
+    else
+    {
+        cout << "Err :(" << endl;
+    }
     return 0;
 }
