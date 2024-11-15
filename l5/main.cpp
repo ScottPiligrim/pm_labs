@@ -11,35 +11,30 @@ using namespace std;
 int main()
 {
    //Задача 1
-   const int N_Max=10000;
-   int n = 21;
+   const int N_Max=1000;
+   int n;
    int prod = 1;
    int min = 0;
    int mas[N_Max];
 
-   cout << "enter 21 number ";
-
-   for(int i=0;i<n;i++)
-    {
-        cin >> mas[i];
-        if (mas[i]<=0)
-        {
-            cout << "Err :(" << endl;
-            return 1;
-        }
-    }
+   cout << "enter nmbr of nmbrs ";
+   cin >> n;
+   cout << "enter nmbrs ";
 
    for (int i=0; i<n; i++)
+      cin >> mas[i];
+
+   for(int i=0; i<n; i++)
    {
-      for (int j=-2; j<20; j++)
+      if (mas[i]>-3 || mas[i]<21)
       {
-         prod*= mas[j];
-         if (mas[i]<min && min==0)
+         prod*=mas[i];
+         if (min>mas[i])
          {
-            min = mas[i];
+            min=mas[i];
          }
+         cout << i+1 << ". " << mas[i] << endl;
       }
-      cout << i+1 << ". " << mas[i] << endl;
    }
 
    if (min!=0)
