@@ -19,7 +19,7 @@ int main()
 
    cout << "enter nmbr of nmbrs ";
    cin >> n;
-   cout << "enter nmbrs ";
+   cout << "enter nmbrs " << endl;
 
    for (int i=0; i<n; i++)
       cin >> mas[i];
