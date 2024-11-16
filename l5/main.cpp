@@ -14,7 +14,7 @@ int main()
    const int N_Max=1000;
    int n;
    int prod = 1;
-   int min = 0;
+   int min = 1000;
    int mas[N_Max];
 
    cout << "enter nmbr of nmbrs ";
@@ -37,14 +37,7 @@ int main()
       }
    }
 
-   if (min!=0)
-   {
-      cout << "min nmbr " << min << endl;
-   }
-   else
-   {
-      cout << "how." << endl;
-   }
+   cout << "min nmbr " << min << endl;
    cout << "product is " << prod << endl;
 
    // Задача 2
