@@ -37,7 +37,7 @@ void removeEvenNumbered(Node*& head)
         bool containsEvenNumbered = false;
         while (n)
         {
-            n = n/10
+            n = n/10;
             nlng++;
             if (nlng % 2 == 0)
             {
