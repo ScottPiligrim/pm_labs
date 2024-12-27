@@ -154,11 +154,14 @@ bool onlyodd(int n)
     return true;
 }
 
-bool iseight(int n)
+bool iseven(int n)
 {
+    int nlng = 0
     while(n>0)
     {
-        if(n%10==8)
+        n = n/10;
+        nlng++;
+        if(n%2==0)
         {
             return true;
         }
@@ -178,5 +181,5 @@ int firstdigit(int n)
 
 bool comparefirstdigit(int a,int b)
 {
-    return firstdigit(a)>firstdigit(b);
+    return firstdigit(a)<firstdigit(b);
 }
