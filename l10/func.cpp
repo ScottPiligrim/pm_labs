@@ -72,8 +72,12 @@ void removeEvenNumbered(Node*& head)
 
 bool conteight(int n)
 {
-    while (n>0){
-        if(n%10==8)
+    int nlng = 0;
+    while (n)
+    {
+        n = n/10;
+        nlng++;
+        if(nlng%2==0)
         {
             return true;
         }
