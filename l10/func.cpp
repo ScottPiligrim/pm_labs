@@ -70,7 +70,7 @@ void removeEvenNumbered(Node*& head)
     }
 }
 
-bool conteight(int n)
+bool conteven(int n)
 {
     int nlng = 0;
     while (n)
@@ -91,7 +91,7 @@ void duplicate(Node*& head)
     Node* curr = head;
     while (curr)
     {
-        if(conteight(curr->val))
+        if(conteven(curr->val))
         {
             Node* newNode= new Node(curr->val);
             newNode->next=curr->next;
